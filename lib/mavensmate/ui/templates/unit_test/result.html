@@ -25,11 +25,13 @@
 					</td>
 					<td>
 						{% if test.Message %}
-							{{ test.Message }} 
+							<pre>{{ test.Message }}</pre>
 						{% endif %}
 						{% if test.StackTrace -%}
-							<br/><br/>
-							<span class="label">Stack Trace</span><br/>{{ test.StackTrace }}
+							<span class="label">Stack Trace</span>
+							<br/>
+							<br/>
+							<pre>{{ test.StackTrace }}</pre>
 						{%- endif %}
 					</td>
 				</tr>
